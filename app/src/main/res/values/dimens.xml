@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation">4dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="text_size_primary">16sp</dimen>
+
+    <dimen name="radius_top_main_bottom_sheet_background">8dp</dimen>
+    <dimen name="margin_top_bottom_sheet_first_item">16dp</dimen>
+    <dimen name="size_profile_avatar">45dp</dimen>
+
+    <dimen name="margin_account_close_button">8dp</dimen>
+    <dimen name="text_size_sign_in_button_text">18sp</dimen>
+    <dimen name="padding_sign_in_button_vertical">10dp</dimen>
+    <dimen name="margin_top_sign_in_button">16dp</dimen>
+    <dimen name="text_size_sign_in_sign_up_hint_text">14sp</dimen>
+    <dimen name="margin_top_sign_in_sign_up_hint_text">8dp</dimen>
+
+    <dimen name="text_size_home_article_title">18sp</dimen>
+    <dimen name="min_height_adapter_status_layout">60dp</dimen>
+</resources>

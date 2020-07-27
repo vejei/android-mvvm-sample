@@ -54,7 +54,7 @@
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
             android:background="@drawable/project_article_preview_background"
-            app:layout_constraintDimensionRatio="2:3"
+            app:layout_constraintDimensionRatio="2:3.4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/image_view_avatar"

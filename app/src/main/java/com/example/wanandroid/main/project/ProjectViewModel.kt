@@ -51,7 +51,7 @@ class ProjectViewModel @Inject constructor(
 
     fun fetchArticles() {
         Timber.d("fetchArticles")
-        articlePage = 0
+        articlePage = 1
         categoryArticlesFetchEvent.onNext(Unit)
     }
 

@@ -13,6 +13,10 @@ def keystorePropertiesFile = rootProject.file("keystore.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
+static def getDate() {
+    return new Date().format("yyyyMMdd")
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -23,6 +27,7 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0.0-alpha"
+        archivesBaseName = "$applicationId-$versionName($versionCode)-${getDate()}"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

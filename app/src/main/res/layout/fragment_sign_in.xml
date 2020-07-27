@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/text_view_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_header_text"
+        android:textSize="24sp"
+        android:textColor="@color/black_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_header" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/guideline_form_right"
+        app:layout_constraintStart_toStartOf="@id/guideline_form_left"
+        app:layout_constraintTop_toBottomOf="@id/guideline_form_top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_person_outline"
+            android:drawablePadding="16dp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/sign_in_username_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintStart_toStartOf="@id/guideline_form_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_form_right"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_username"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:drawableStart="@drawable/ic_lock_outline"
+            android:drawablePadding="16dp"
+            android:hint="@string/sign_in_password_hint" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_form_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_form_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_form_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22"/>
+
+    <com.example.uikit.ProgressButton
+        android:id="@+id/button_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_submit_button_text"
+        android:textSize="@dimen/text_size_sign_in_button_text"
+        android:paddingTop="@dimen/padding_sign_in_button_vertical"
+        android:paddingBottom="@dimen/padding_sign_in_button_vertical"
+        android:layout_marginTop="@dimen/margin_top_sign_in_button"
+        app:layout_constraintStart_toStartOf="@id/guideline_form_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_form_right"
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_password"
+        app:progressBarColor="@android:color/darker_gray"
+        app:processingHint="@string/sign_in_button_processing_hint"
+        app:processing="false"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/text_view_sign_up_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_sign_up_hint"
+        android:textSize="@dimen/text_size_sign_in_sign_up_hint_text"
+        android:layout_marginTop="@dimen/margin_top_sign_in_sign_up_hint_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <io.github.vejei.carouselview.CarouselView
+                    android:id="@+id/carousel_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    app:carouselMode="preview"
+                    app:carouselPreviewSide="sides"
+                    app:carouselPreviewOffset="30dp"
+                    app:carouselMargin="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <io.github.vejei.viewpagerindicator.indicator.RectIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/carousel_view"
+                    app:layout_constraintEnd_toEndOf="@id/carousel_view"
+                    app:layout_constraintTop_toTopOf="@id/carousel_view"
+                    app:layout_constraintBottom_toBottomOf="@id/carousel_view"
+                    app:layout_constraintVertical_bias="0.9"
+                    app:indicatorColor="@color/grey"
+                    app:indicatorSelectedColor="@color/color_accent"
+                    app:indicatorGap="8dp"
+                    app:indicatorWidth="12dp"
+                    app:indicatorHeight="2dp"
+                    app:indicatorCornerRadius="6dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/carousel_view"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/layout_loading" android:id="@+id/layout_loading" android:visibility="gone" />
+
+    <include layout="@layout/layout_retry" android:id="@+id/layout_retry" android:visibility="gone"/>
+
+    <include layout="@layout/layout_empty" android:id="@+id/layout_empty" android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimationStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="LauncherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/launcher_background</item>
+    </style>
+
+    <style name="ActivityAnimationStyle">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_out_right</item>
+    </style>
+
+    <style name="BottomNavigationViewItemText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/dialog_mine_background</item>
+    </style>
+    <style name="RoundedCornerBottomSheetDialog" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetModal</item>
+    </style>
+
+    <style name="BottomSheetListItem">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_normal</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/clickable_background</item>
+    </style>
+    
+    <style name="MineDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/mine_dialog_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/mine_dialog_slide_down</item>
+    </style>
+    
+    <style name="MineDialogActivity" parent="AppTheme">
+        <item name="homeAsUpIndicator">@drawable/ic_close</item>
+        <item name="android:windowAnimationStyle">@style/MineDialogActivityAnimationStyle</item>
+    </style>
+
+    <style name="MineDialogActivityAnimationStyle">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_up</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_stay</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_stay</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_down</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_slide_down</item>
+        <item name="android:windowExitAnimation">@anim/dialog_slide_up</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@android:color/darker_gray">
+
+    <include layout="@layout/layout_adapter_loading" android:id="@+id/layout_loading"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_adapter_data_empty" android:id="@+id/layout_data_empty"
+        android:visibility="visible" />
+
+    <include layout="@layout/layout_adapter_retry" android:id="@+id/layout_adapter_retry"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

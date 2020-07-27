@@ -146,21 +146,25 @@ class MineDialogFragment : BottomSheetDialogFragment(), HasAndroidInjector, Easy
             textViewHistory.clicks().compose(throttleClick()).subscribe {
                 // 跳转到浏览历史（不用登录）
                 startActivity(Intent(context, HistoryActivity::class.java))
+                dismiss()
             }.addTo(disposables)
 
             textViewMark.clicks().compose(throttleClick()).subscribe {
                 // 跳转到收藏
                 checkPlatformVersion(MARK_GET_ACCOUNTS, markCallback)
+                dismiss()
             }.addTo(disposables)
 
             textViewTodo.clicks().compose(throttleClick()).subscribe {
                 // 跳转到待办
                 checkPlatformVersion(TODO_GET_ACCOUNTS, todoCallback)
+                dismiss()
             }.addTo(disposables)
 
             textViewSettings.clicks().compose(throttleClick()).subscribe {
                 // 跳转到设置（不用登录）
                 startActivity(Intent(context, SettingsActivity::class.java))
+                dismiss()
             }.addTo(disposables)
         }
     }

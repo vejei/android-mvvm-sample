@@ -18,7 +18,7 @@ class ProjectViewModel @Inject constructor(
     private val categoryArticlesFetchEvent = PublishSubject.create<Unit>()
     val categoryArticles: Observable<Result<MutableList<Article>>>
     val isArticleRefreshing = PublishSubject.create<Boolean>()
-    private var articlePage = 0
+    private var articlePage = 1
     private var categoryId = -1
 
     init {

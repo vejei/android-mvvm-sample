@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#FFFFFF</color>
+    <color name="color_primary_dark">#CCCCCC</color>
+    <color name="color_accent">#0084FF</color>
+    <color name="black_bold">#1A1A1A</color>
+    <color name="black_normal">#444444</color>
+    <color name="white_smoke">#F6F6F6</color>
+    <color name="grey">#DADCE0</color>
+    <color name="grey_dark">#999999</color>
+    <color name="grey_translucency">#40999999</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

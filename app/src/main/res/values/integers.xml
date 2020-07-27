@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="activity_slide_duration">300</integer>
+    <integer name="fragment_fade_duration">300</integer>
+    <integer name="list_item_duration">100</integer>
+    <integer name="bottom_sheet_dialog_duration">300</integer>
+    <integer name="dialog_slide_animation">200</integer>
+    <integer name="fragment_slide_duration">200</integer>
+</resources>

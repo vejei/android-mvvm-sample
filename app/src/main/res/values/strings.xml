@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">玩Android</string>
+    <string name="account_type">com.example.wanandroid</string>
+    <string name="auth_token_type">@string/account_type</string>
+    <string name="settings">设置</string>
+    <string name="cancel">取消</string>
+    <string name="error_occurred_message">出现了一点问题</string>
+    <string name="chinese_dash">—</string>
+    <string name="sample_title">这是一个标题，这是一个很长的标题，一个非常长的标题，特别特别特别长的标题，长到看不到尽头</string>
+    <string name="sample_description">这是一段描述性的文本，一段非常长的文本，非常长特别长，就是很长别问我到底有多长，反正就是很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长</string>
+    <string name="no_data">没有数据</string>
+    <string name="todo_text">TODO</string>
+    <string name="click_to_retry">点击重试</string>
+    <string name="error_hint">数据加载发生错误，请检查网络连接后重试</string>
+    <string name="data_empty_hint">没有数据</string>
+    <string name="not_logged_in_toast_message">请先登录</string>
+    <string name="current_version">当前版本</string>
+    <string name="sample_version_info_summary">当前版本 1.0.0-alpha (100)</string>
+
+    <string name="menu_search">搜索</string>
+    <string name="menu_navigation">导航</string>
+    <string name="menu_account">账号</string>
+
+    <string name="menu_home">首页</string>
+    <string name="menu_category">体系</string>
+    <string name="menu_project">项目</string>
+    <string name="menu_square">广场</string>
+
+    <string name="mine_dialog_sign_in_button_text">登录</string>
+    <string name="mine_dialog_sign_up_button_text">注册</string>
+    <string name="mine_dialog_sign_out_button_text">退出账号</string>
+    <string name="mine_dialog_or">或</string>
+    <string name="mine_dialog_logged_in_toast_message">已登录</string>
+    <string name="mine_dialog_browsing_history">浏览历史</string>
+    <string name="mine_dialog_star">收藏</string>
+    <string name="mine_dialog_todo">待办</string>
+    <string name="mine_dialog_sign_out_toast_message">已退出</string>
+    <string name="sign_out_dialog_title">退出登录</string>
+    <string name="sign_out_dialog_message">你要退出你的账号吗？</string>
+    <string name="sign_out_dialog_positive_button_text">对的</string>
+
+    <string name="sign_in_header_text">账号登录</string>
+    <string name="sign_in_username_hint">用户名</string>
+    <string name="sign_in_password_hint">密码</string>
+    <string name="sign_in_submit_button_text">登录</string>
+    <string name="sign_in_sign_up_hint">没有账号？点击注册</string>
+    <string name="sign_in_button_processing_hint">登录中</string>
+    <string name="sign_up_header_text">账号注册</string>
+    <string name="sign_up_username_hint">输入用户名</string>
+    <string name="sign_up_password_hint">输入密码</string>
+    <string name="sign_up_password_repeat_hint">确认密码</string>
+    <string name="sign_up_submit_button_text">注册</string>
+    <string name="sign_up_sign_in_hint">已有账号，点击登录</string>
+    <string name="sign_up_button_processing_hint">注册中</string>
+    <string name="sign_up_password_not_match_error_message">密码不一致</string>
+
+    <string name="adapter_data_empty_hint">没有更多了</string>
+    <string name="adapter_retry_hint">重新加载</string>
+
+    <string name="menu_mark">收藏</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_reload">重新加载</string>
+    <string name="menu_copy_url">复制链接</string>
+    <string name="menu_open_in_browser">在浏览器中打开</string>
+
+    <string name="search_keyword_edit_text_hint">输入关键词搜索</string>
+    <string name="suggestion_hot_title">搜索热词</string>
+    <string name="suggestion_search_history">搜索历史</string>
+    <string name="suggestion_clear_history">清空</string>
+
+    <string name="url_copied_toast_message">已复制到剪贴板</string>
+    <string name="get_accounts_permission_request_rationale_message">收藏操作需要获取账号信息进行登录验证，请允许权限请求！</string>
+    <string name="get_accounts_permission_denied_toast_message">读取账号信息失败，无法验证用户身份</string>
+
+    <string name="starred_articles_tab_title">文章</string>
+    <string name="starred_sites_tab_title">网站</string>
+    <string name="add_site_button_text">添加网站</string>
+    <string name="add_site_dialog_add_title">添加网站</string>
+    <string name="add_site_dialog_edit_title">编辑网站</string>
+    <string name="add_site_dialog_site_name_field_hint">网站名称</string>
+    <string name="add_site_dialog_site_url_field_hint">网站地址</string>
+    <string name="add_site_dialog_save_button_text">保存</string>
+    <string name="add_site_dialog_cancel_button_text">@string/cancel</string>
+    <string name="menu_edit">编辑</string>
+    <string name="menu_delete">删除</string>
+    <string name="article_unmarked_hint_message">已取消收藏</string>
+
+    <string name="settings_general_settings_title">通用</string>
+    <string name="settings_other_settings_title">其它</string>
+    <string name="settings_url_open_in_browser_key">url_open_in_browser</string>
+    <string name="settings_url_open_in_browser_title">在浏览器中打开链接</string>
+    <string name="settings_url_open_in_browser_summary">默认应用内打开</string>
+    <string name="settings_enable_history_key">enable_history</string>
+    <string name="settings_enable_history_title">浏览历史</string>
+    <string name="settings_enable_history_summary">关闭后会清除当前所有浏览历史</string>
+    <string name="settings_enable_night_mode_key">enable_night_mode</string>
+    <string name="settings_enable_night_mode_title">夜间模式</string>
+    <string name="settings_version_info_key">version_info</string>
+    <string name="settings_version_info_title">版本</string>
+    <string name="settings_change_log_title">更新日志</string>
+    <string name="settings_open_source_license_key">open_source_license</string>
+    <string name="settings_open_source_license_title">开源许可</string>
+    <string name="settings_feedback_title">反馈</string>
+    <string name="settings_about_title">关于</string>
+    <string name="history_disable_alert_dialog_title">清除浏览历史</string>
+    <string name="history_disable_alert_dialog_message">关闭浏览历史设置会清除当前所有浏览历史，确定要关闭吗？</string>
+    <string name="history_disable_alert_dialog_positive_button_text">确定</string>
+
+    <string name="menu_disable_history">关闭浏览历史</string>
+    <string name="menu_clear_histories">清空浏览历史</string>
+    <string name="menu_delete_selected">删除选中</string>
+    <string name="menu_select_all">全选</string>
+    <string name="history_action_mode_selected">选中</string>
+    <string name="history_histories_enabled_hint_text">浏览历史已关闭</string>
+    <string name="history_enable_histories_button_text">开启</string>
+
+    <string name="menu_add">添加</string>
+    <string name="menu_filter">筛选</string>
+    <string name="todo_uncompleted_tab_title">未完成</string>
+    <string name="todo_completed_tab_title">已完成</string>
+    <string name="todo_edit_name_input_hint">要做的事</string>
+    <string name="todo_edit_description_input_hint">备注</string>
+    <string name="todo_edit_save_button_text">保存</string>
+    <string name="todo_edit_new_item_toolbar_title">添加</string>
+    <string name="todo_edit_edit_item_toolbar_title">编辑</string>
+    <string name="todo_edit_set_date">设置日期</string>
+    <string name="todo_edit_set_time">设置时间</string>
+    <string name="todo_date_prefix_text">添加于</string>
+</resources>

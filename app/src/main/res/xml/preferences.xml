@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory
+        android:key="general_settings"
+        android:title="@string/settings_general_settings_title"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            android:key="@string/settings_url_open_in_browser_key"
+            android:title="@string/settings_url_open_in_browser_title"
+            android:summary="@string/settings_url_open_in_browser_summary"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            android:key="@string/settings_enable_history_key"
+            android:title="@string/settings_enable_history_title"
+            android:summary="@string/settings_enable_history_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            android:key="@string/settings_enable_night_mode_key"
+            android:title="@string/settings_enable_night_mode_title"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="other_settings"
+        android:title="@string/settings_other_settings_title"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="@string/settings_version_info_key"
+            android:title="@string/settings_version_info_title"
+            app:iconSpaceReserved="false"
+            tools:summary="@string/sample_version_info_summary"/>
+
+        <Preference
+            android:key="change_log"
+            android:title="@string/settings_change_log_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.github.com/vejei/android-mvvm-sample/CHANGELOG.md"/>
+        </Preference>
+
+        <Preference
+            android:key="@string/settings_open_source_license_key"
+            android:title="@string/settings_open_source_license_title"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            android:key="feedback"
+            android:title="@string/settings_feedback_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.github.com/vejei/android-mvvm-sample/issues"/>
+        </Preference>
+
+        <Preference
+            android:key="about"
+            android:title="@string/settings_about_title"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.github.com/vejei/android-mvvm-sample/README.md"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -45,7 +45,7 @@
             app:iconSpaceReserved="false">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://www.github.com/vejei/android-mvvm-sample/CHANGELOG.md"/>
+                android:data="https://github.com/vejei/android-mvvm-sample/blob/master/CHANGELOG.md"/>
         </Preference>
 
         <Preference
@@ -68,7 +68,7 @@
             app:iconSpaceReserved="false">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://www.github.com/vejei/android-mvvm-sample/README.md"/>
+                android:data="https://github.com/vejei/android-mvvm-sample/blob/master/README.md"/>
         </Preference>
 
     </PreferenceCategory>

@@ -32,3 +32,10 @@ git clone https://github.com/vejei/android-mvvm-sample.git
 * [RxBinding](https://github.com/JakeWharton/RxBinding)
 * [CarouselView](https://github.com/vejei/CarouselView)
 * [ViewPagerIndicator](https://github.com/vejei/ViewPagerIndicator)
+
+## 运行截图
+|![splash](./screenshots/splash.png)|![mine dialog](./screenshots/mine_dialog.png)|![sign in](./screenshots/sign_in.png)|![sign up](./screenshots/sign_up.png)|
+|----|----|----|----|
+|![home](./screenshots/home.png)|![category](./screenshots/category.png)|![project](./screenshots/project.png)|![square](./screenshots/square.png)|
+|![article detail](./screenshots/article_detail.png)|![search suggestions](./screenshots/search_suggestions.png)|![search result](./screenshots/search_result.png)|![history](./screenshots/history.png)|
+|![mark](./screenshots/marked_articles.png)|![todo](./screenshots/todo.png)|![settings](./screenshots/settings.png)|![settings licenses](./screenshots/settings_open_source_license.png)|
